@@ -6,11 +6,13 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import User from "./components/user";
+import Singl from "./page/singl-page";
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-    <Route path="/" element={<User />}>
-
+    <Route>
+      <Route path="/" element={<User/>} />
+      <Route path="/singl/:id" element={<Singl/>}/>
     </Route>)
   );
   return <RouterProvider router={routes} />;

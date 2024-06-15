@@ -1,0 +1,13 @@
+.box{
+    width: 400px;
+  box-shadow: 10px 10px 20px #babecc, -10px -10px 20px #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
